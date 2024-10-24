@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html style="background-color:#FFDEAD">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Perfil</title>
+
+		<style>
+			h3{
+				text-align: center;
+				font-family:verdana
+			}
+
+		</style>
+	</head>
+
+	<body>
+
+		<divi>
+			<div style="background-color:#FFA500; border:5px solid #FFD700">
+				<h3>Perfil de usuário</h3></div>
+		</divi>
+
+		<div>
+			<p><a href="">inicio</a></p>
+		</div>
+
+		<div>
+			<fieldset>
+			<legend>Nome</legend>
+			<p id="Perfilname">Nome</p>
+			</fieldset>
+		</div>
+		
+			<div>
+				<fieldset>
+				<legend>Foto de perfil</legend>
+				<a href="url">
+					<img src="imagen/perfil.png" alt="perfil" style="width: 10%; height:30%">
+				</a>
+				</fieldset>
+			</div>
+
+			
+			<div>
+				<fieldset>
+				<legend>Dados Pesoais</legend>
+				<p id="perfilNome">Local:</p>
+
+				<p id="perfilNome">Data de nascimento:</p>
+
+				<p id="Perfilsex">Sexo:</p>
+
+				<p id="Perfilemail">E-mail:</p>
+
+				<p id="Perfilcontact">Celular:</p>
+				</fieldset>
+			</div>
+
+			<script>
+				const name = localStorage.getItem('name');
+				const sex = localStorage.getItem('sex');
+				const email = localStorage.getItem('email');
+				const contact = localStorage.getItem('contact');
+				document.getElementById('PerfilName').innerText = 'Nome: ' + nome;
+				document.getElementById('Perfilsex').innerText = 'Sexo: ' + sex;
+				document.getElementById('Perfilemail').innerText = 'E-mail: ' + email;
+				document.getElementById('Perfilcontact').innerText = 'Celular: ' + contact;
+			</script>
+
+		
+
+	</body>
+
+</html> 

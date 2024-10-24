@@ -1,0 +1,144 @@
+<!DOCTYP html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Cadastro</title>
+
+		<style>
+
+			h3{
+				text-align: center;
+				font-family:verdana
+			}
+
+			body {
+  				background-image: url('./imagen/pet.jpeg');
+				background-repeat: no-repeat;
+  				background-attachment: fixed;  
+  				background-size: cover;
+  			}
+
+		</style>
+	</head>
+	<body>
+		<form action="/cadastro.js">
+			<divi>
+				<div style="background-color:#FFA500; border:5px solid #FFD700">
+					<h3>Cadastre-se no Aconchego Animal</h3></div>
+			</divi>
+
+			<div>
+				<p><a href="">inicio</a></p>
+			</div>
+			
+		
+
+			<form id="cadastroForm">
+
+				<label for="email">E-mail:</label>
+  				<input type="email" id="email" name="email" required>
+
+				<label for="pwd">Senha:</label>
+				<input type="password" id="pwd" name="pwd" required><br><br>
+
+				<label for="email">Repetir E-mail:</label>
+  				<input type="email" id="email" name="email" required>
+
+				<label for="pwd">Repetir Senha:</label>
+				<input type="password" id="pwd" name="pwd" required><br><br>
+
+
+
+
+				<fieldset>
+				<legend>Dados Pesoais</legend>
+				<label for="name">Nome:</label>
+				<input type="text" id="name" name="name" value="" required><br><br>
+
+				<label for="name">Sobrenome:</label>
+				<input type="text" id="name" name="name" value="" required><br><br>
+
+				<labell for="sex">Sexo:</label>
+					<select id="sex" name="sex">
+						<option vavule="plataform">Selecione</option>
+						<option vavule="store">Masculino</option><br>
+						<option vavule="store">Feminino</option><br>
+						<option vavule="store">Prefiro não informar</option><br>
+					</select><br><br>
+
+				<labell for="cpf">CPF:</label>
+				<input type="text" id="name" name="cpf" value="" required><br><br>
+
+				<labell for="contact">Telefone:</label>
+				<input type="text" id="name" name="contact" value="" required><br><br>
+
+				<labell for="contact">Celular:</label>
+				<input type="text" id="name" name="contact" value="" required><br>
+				</fieldset>
+
+				<fieldset>
+				<legend>Endereço de Entrega</legend>
+				<labell for="cep">CEP:</label>
+				<input type="text" id="name" name="cep" value="" required><br><br>
+
+				<labell for="nr">Número:</label>
+				<input type="text" id="nr" name="nr" value="" required><br><br>
+
+				<labell for="rua">Rua:</label>
+				<input type="text" id="name" name="rua" value="" required><br><br>
+
+				<labell for="bair">Bairro:</label>
+				<input type="text" id="name" name="bair" value="" required><br><br>
+
+				<labell for="cid">Cidade:</label>
+				<input type="text" id="name" name="cid" value="" required><br>
+				</fieldset>
+
+				<button type-"button" onclick="alert('Cadastrado com sucesso.')">Cadastrar</button>
+			</form>
+
+			<input type="checkbox" id="notfic" name="skill" value="">
+			<labell for="notfic">Receber ofertas e novidades por e-mail</label><br>
+
+			
+
+
+			<script>
+				document.getElementById('cadastroForm').onsubmit = function(event) {
+					event.preventDefault(); // Impede o envio do formulário
+					const name = document.getElementById('name').value;
+					const email = document.getElementById('email').value;
+					const pwd = document.getElementById('pwd').value;
+					const sex = document.getElementById('sex').value;
+					const cpf = document.getElementById('cpf').value;
+					const contact = document.getElementById('contact').value;
+					const cep = document.getElementById('cep').value;
+					const nr = document.getElementById('nr').value;
+					const rua = document.getElementById('rua').value;
+					const bair = document.getElementById('bair').value;
+					const cid = document.getElementById('cid').value;
+					const notfic = document.getElementById('notfic').value;
+					localStorage.setItem('name', name);
+					localStorage.setItem('email', email);
+					localStorage.setItem('pwd', pwd);
+					localStorage.setItem('sex', sex);
+					localStorage.setItem('cpf', cpf);
+					localStorage.setItem('contact', contact);
+					localStorage.setItem('cep', cep);
+					localStorage.setItem('nr', nr);
+					localStorage.setItem('rua', rua);
+					localStorage.setItem('bair', bair);
+					localStorage.setItem('cid', cid);
+					localStorage.setItem('notfic', notfic);
+					window.location.href = 'Perfil.html'; // Redireciona para a página de perfil
+				};
+			</script>
+		
+
+		</form>
+
+	</body>
+
+</html> 

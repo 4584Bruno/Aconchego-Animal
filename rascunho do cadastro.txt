@@ -1,0 +1,103 @@
+<!DOCTYP html>
+<html>
+	<head>
+
+		<title>Cadastro</title>
+
+		<style>
+
+			h3{
+				text-align: center;
+				font-family:verdana
+			}
+
+			body {
+  				background-image: url('./imagen/pet.jpeg');
+				background-repeat: no-repeat;
+  				background-attachment: fixed;  
+  				background-size: cover;
+  			}
+
+		</style>
+	</head>
+	<body>
+		<form action="/cadastro.js">
+			<divi>
+				<div style="background-color:#FFA500; border:5px solid #FFD700">
+					<h3>Cadastre-se no Aconchego Animal</h3></div>
+			</divi>
+
+			<div>
+				<p><a href="">inicio</a></p>
+			</div>
+
+				<label for="email">E-mail:</label>
+  				<input type="email" id="email" name="email">
+
+				<label for="pwd">Senha:</label>
+				<input type="password" id="pwd" name="pwd"><br><br>
+
+				<label for="email">Repetir E-mail:</label>
+  				<input type="email" id="email" name="email">
+
+				<label for="pwd">Repetir Senha:</label>
+				<input type="password" id="pwd" name="pwd"><br><br>
+
+
+
+
+				<fieldset>
+				<legend>Dados Pesoais</legend>
+				<label for="name">Nome:</label>
+				<input type="text" id="name" name="name" value="" ><br><br>
+
+				<label for="name">Sobrenome:</label>
+				<input type="text" id="name" name="name" value="" ><br><br>
+
+				<labell for="sex">Sexo:</label>
+					<select id="sex" name="sex">
+						<option vavule="plataform">Selecione</option>
+						<option vavule="store">Masculino</option><br>
+						<option vavule="store">Feminino</option><br>
+						<option vavule="store">Prefiro não informar</option><br>
+					</select><br><br>
+
+				<labell for="cpf">CPF:</label>
+				<input type="text" id="name" name="cpf" value="" ><br><br>
+
+				<labell for="contact">Telefone:</label>
+				<input type="text" id="name" name="contact" value="" ><br><br>
+
+				<labell for="contact">Celular:</label>
+				<input type="text" id="name" name="contact" value="" ><br>
+				</fieldset>
+
+				<fieldset>
+				<legend>Endereço de Entrega</legend>
+				<labell for="cep">CEP:</label>
+				<input type="text" id="name" name="cep" value="" ><br><br>
+
+				<labell for="nr">Número:</label>
+				<input type="text" id="nr" name="nr" value="" ><br><br>
+
+				<labell for="rua">Rua:</label>
+				<input type="text" id="name" name="rua" value="" ><br><br>
+
+				<labell for="bair">Bairro:</label>
+				<input type="text" id="name" name="bair" value="" ><br><br>
+
+				<labell for="cid">Cidade:</label>
+				<input type="text" id="name" name="cid" value="" ><br>
+				</fieldset>
+
+				<input type="checkbox" id="notfic" name="skill" value="">
+				<labell for="notfic">Receber ofertas e novidades por e-mail</label><br>
+
+			
+				<button type-"button" onclick="alert('Cadastrado com sucesso.')">Cadastrar</button>
+
+		</form>
+
+	</body>
+
+</html> 

@@ -1,0 +1,64 @@
+<!DOCTYP html>
+<html>
+	<head>
+
+		<title>Cadastro</title>
+	</head>
+	<body>
+		<form action="/cadastro.js">
+			
+			<h3>Cadastro Scrum</h3>
+
+				<fieldset>
+				<legend>Dados Pesoais</legend>
+				<label for="name">Nome Completo:</label>
+				<input type="text" id="name" name="name" value="" ><br>
+
+				<labell for="address">Endereço:</label>
+				<input type="text" id="name" name="address" value="" ><br>
+
+				<labell for="contact">Contato:</label>
+				<input type="text" id="name" name="contact" value="" ><br>
+				</fieldset>
+
+			<h3>Função:</h3>
+
+				<input type="radio" id="po" name="function" value="ProductOwner">
+				<labell for="po">Product Owener:</label><br>
+
+				<input type="radio" id="sm" name="function" value="ScrumMaster">
+				<labell for="sm">Scrum Master:</label><br>
+
+				<input type="radio" id="team" name="function" value="Team">
+				<labell for="team">Team:</label><br>
+
+			<h3>Hablidades:</h3>
+
+				<input type="checkbox" id="html" name="skill" value="HTML">
+				<labell for="html">HTML</label><br>
+
+				<input type="checkbox" id="css" name="skill" value="CSS">
+				<labell for="css">CSS</label><br>
+
+				<input type="checkbox" id="js" name="skill" value="JavaScript">
+				<labell for="js">Java Script</label><br>
+
+			<h3>projeto:</h3>
+
+				<labell for="project">Ecolha o projeto:</label>
+				<select id="project" name="project">
+					<option vavule="plataform">plataforma de lojas</option>
+					<option vavule="store">loja ancora</option><br>
+				</select>
+
+			<h3>Deixe seu comentario:</h3>
+
+				<textarea name="form" rows="5" cols"120"></textarea><br><br>
+				<input type="submit" value="Enviar"><br>
+				<button type-"button" onclick="alert('Cadastrado com sucesso.')">Cadastrar</button>
+
+		</form>
+
+	</body>
+
+</html>
